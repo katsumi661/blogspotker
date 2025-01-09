@@ -1,57 +1,30 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
-    <link rel="stylesheet" href="style.css">
+  <meta charset="UTF-8">
+  <link rel="stylesheet" href="style.css">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Connected Fluid System</title>
 </head>
 <body>
-    <div class="container">
-        <h1>BIODATA</h1>
-        <img src="2759525556800247493.jpg.png" alt="Profile Picture">
-        <table class="bio-table">
-            <tr>
-                <td><b>Nama</b></td>
-                <td>Muhammad Nabil</td>
-            </tr>
-            <tr>
-                <td><b>Alamat</b></td>
-                <td>Martapura</td>
-            </tr>
-            <tr>
-                <td><b>Hobi</b></td>
-                <td>Memasak</td>
-            </tr>
-            <tr>
-                <td><b>Sosial media</b></td>
-                <td><a href="">@existing.kerwyn</a></td>
-            </tr>
-        </table>
-        <div class="info">
-            <table>
-                <tr>
-                    <th>Jenjang</th>
-                    <th>Nama Sekolah</th>
-                    <th>Tahun</th>
-                </tr>
-                <tr>
-                    <td>SD</td>
-                    <td>SDN 3 KOMET</td>
-                    <td>2012</td>
-                </tr>
-                <tr>
-                    <td>SMP</td>
-                    <td>SMPN 2 BANJARBARU</td>
-                    <td>2018</td>
-                </tr>
-                <tr>
-                    <td>SMK</td>
-                    <td>SMKN 3 BANJARBARU</td>
-                    <td>2021</td>
-                </tr>
-            </table>
-        </div>
-    </div>
+  <div id="toolbar">
+    <div class="asset" data-type="furnace" draggable="true">Furnace</div>
+    <div class="asset" data-type="chest" draggable="true">Chest</div>
+    <div class="asset" data-type="hopper" draggable="true">Hopper</div>
+    <div class="asset" data-type="fluid-tank" draggable="true">Fluid Tank</div>
+    <div class="asset" data-type="pipe" draggable="true">Pipe</div>
+    <button id="delete-mode-btn">Delete Mode</button>
+    <label>
+      Rows: <input id="row-input" type="number" min="1" value="5">
+    </label>
+    <label>
+      Columns: <input id="col-input" type="number" min="1" value="5">
+    </label>
+    <button id="set-grid-btn">Set Grid</button>
+  </div>
+  <div id="grid-container">
+    <div id="grid"></div>
+  </div>
+  <script src="script.js"></script>
 </body>
 </html>
